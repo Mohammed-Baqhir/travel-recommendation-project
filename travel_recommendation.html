@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TravelBloom</title>
+  <link rel="stylesheet" href="travel_recommendation.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">✈ TravelBloom</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+    <div class="search-area">
+      <input type="text" id="searchInput" placeholder="Search beach, temple, country..." />
+      <button onclick="searchRecommendations()">Search</button>
+      <button onclick="clearResults()">Clear</button>
+    </div>
+  </nav>
+
+  <main id="home" class="hero-section">
+    <div class="social-links">
+      <a href="#">f</a><a href="#">x</a><a href="#">in</a><a href="#">▶</a>
+    </div>
+    <section class="hero-content">
+      <h1>EXPLORE DREAM DESTINATIONS</h1>
+      <p>Discover breathtaking beaches, peaceful temples, and beautiful countries around the world. TravelBloom helps you explore cultures, destinations, and memorable journeys.</p>
+      <button class="book-btn">Book Now</button>
+    </section>
+    <section id="results" class="results-container"></section>
+  </main>
+
+  <section id="about" class="about-section">
+    <h2>About Us</h2>
+    <p>TravelBloom is a travel recommendation platform created to help users discover ideal destinations based on their preferences. Our goal is to make travel planning easier through personalized suggestions, images, and destination details.</p>
+    <div class="team-container">
+      <div class="team-card"><h3>Mohammed Baqhir R</h3><p>Founder & Web Developer</p></div>
+      <div class="team-card"><h3>Aisha Khan</h3><p>Travel Research Lead</p></div>
+      <div class="team-card"><h3>Rahul Menon</h3><p>Customer Experience Manager</p></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Have questions or need help planning your trip? Send us a message.</p>
+    <form class="contact-form" onsubmit="submitContactForm(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <script src="travel_recommendation.js"></script>
+</body>
+</html>
